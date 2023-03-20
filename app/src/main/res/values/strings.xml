@@ -208,6 +208,8 @@
     <string name="USD_ZAR">South African Rand</string>
     <string name="USD_ZMW">Zambian Kwacha</string>
     <string name="USD_ZWL">Zimbabwean Dollar</string>
+    <string name="openexchangerates_release_api_key">acb50665c0c6490f84a1cde3377c9743</string>
+    <string name="openexchangerates_debug_api_key">acb50665c0c6490f84a1cde3377c9743</string>
 
     <!-- Currency names as array -->
     <string-array name="currency_names">

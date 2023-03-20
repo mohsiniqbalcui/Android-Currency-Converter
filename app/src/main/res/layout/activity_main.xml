@@ -71,16 +71,6 @@
             app:itemTextColor="?attr/text_color"
             app:menu="@menu/drawer_view">
 
-            <TextView
-                android:id="@+id/last_updated_label"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:gravity="center"
-                android:padding="16dp"
-                android:textColor="@color/semi_transparent"
-                tools:text="Last updated: 2020-02-21 13:45" />
-
         </com.google.android.material.navigation.NavigationView>
 
     </androidx.drawerlayout.widget.DrawerLayout>

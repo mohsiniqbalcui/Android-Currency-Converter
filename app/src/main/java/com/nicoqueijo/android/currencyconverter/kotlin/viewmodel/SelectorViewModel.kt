@@ -33,6 +33,7 @@ class SelectorViewModel @ViewModelInject constructor(
 
     // 1 in 12 chance the user will be shown an interstitial ad when they select a currency.
     val willShowAd = (1..12).random() == 1 && MainViewModel.adsEnabled
+/*
     fun getInterstitialAdId(context: Context): String {
         with(context.resources) {
             return when (BuildConfig.BUILD_TYPE) {
@@ -42,6 +43,7 @@ class SelectorViewModel @ViewModelInject constructor(
             }
         }
     }
+*/
 
     /**
      * Takes the clicked currency, updates its selected value to true and its order value as the

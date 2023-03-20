@@ -59,7 +59,7 @@ class DefaultRepository @Inject constructor(
             }
             return if (retrofitResponse.isSuccessful) {
                 persistResponse(retrofitResponse)
-                Resource.Success
+                 Resource.Success
             } else {
                 // Retrofit call executed but response wasn't in the 200s
                 Resource.Error(retrofitResponse.errorBody()?.string())

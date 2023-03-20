@@ -1,6 +1,7 @@
 package com.nicoqueijo.android.currencyconverter.kotlin.util
 
 import android.app.Activity
+import android.app.ActivityManager
 import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
@@ -183,4 +184,18 @@ object Utils {
     fun Long.toMillis() = this * 1_000L
 
     val String.Companion.EMPTY get() = ""
+
+    fun isServiceRunning(context: Context, serviceClassName: String?): Boolean {
+        val activityManager =
+            context.getSystemService(Context.ACTIVITY_SERVICE) as ActivityManager
+        val services: List<ActivityManager.RunningServiceInfo> =
+            activityManager.getRunningServices(Int.MAX_VALUE)
+        for (runningServiceInfo in services) {
+            if (runningServiceInfo.service.className.equals(serviceClassName)) {
+                return true
+            }
+        }
+        return false
+    }
+
 }

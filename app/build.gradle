@@ -5,11 +5,11 @@ apply plugin: 'kotlin-kapt'
 apply plugin: 'dagger.hilt.android.plugin'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 33
     defaultConfig {
         applicationId "com.nicoqueijo.android.currencyconverter"
         minSdkVersion 21
-        targetSdkVersion 29
+        targetSdkVersion 33
         versionCode 29
         versionName "1.2"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -76,7 +76,7 @@ dependencies {
     implementation "androidx.constraintlayout:constraintlayout:$constraint_layout_version"
     implementation "androidx.cardview:cardview:$card_view_version"
     implementation "androidx.legacy:legacy-support-v4:$legacy_support_version"
-    implementation "com.google.android.gms:play-services-ads:$play_services_ads_version"
+//    implementation "com.google.android.gms:play-services-ads:$play_services_ads_version"
     implementation "com.google.android.material:material:$material_version"
 
     // Test
@@ -97,8 +97,8 @@ dependencies {
     androidTestImplementation "com.google.truth:truth:$truth_version"
     androidTestImplementation "io.mockk:mockk-android:$mockk_version"
 
-    // Android In-App Billing v3
-    implementation "com.anjlab.android.iab.v3:library:$android_in_app_billing_version"
+//    // Android In-App Billing v3
+//    implementation "com.anjlab.android.iab.v3:library:$android_in_app_billing_version"
 
     // Coroutines
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
@@ -109,11 +109,6 @@ dependencies {
 
     // FadingEdgeLayout
     implementation "com.github.bosphere.android-fadingedgelayout:fadingedgelayout:$fading_edge_layout_version"
-
-    // Google Play Billing
-    implementation "com.android.billingclient:billing:$google_play_billing_version"
-    implementation "com.android.billingclient:billing:$google_play_billing_version"
-    implementation "com.android.billingclient:billing-ktx:$google_play_billing_version"
 
     // Hilt
     implementation "com.google.dagger:hilt-android:$hilt_version"
