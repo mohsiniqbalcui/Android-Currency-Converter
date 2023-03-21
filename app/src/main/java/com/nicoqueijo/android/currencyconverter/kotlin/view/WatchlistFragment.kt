@@ -239,7 +239,7 @@ class WatchlistFragment : Fragment() {
         }
         viewModel.wasListConstructed = true
         if (viewModel.isFirstLaunch()) {
-            showTargets()
+//            showTargets()
             viewModel.setFirstLaunch(false)
         }
     }
